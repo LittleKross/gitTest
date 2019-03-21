@@ -6,13 +6,16 @@ public class Oddities{
 		for(int i = 1; i <= num; i++){
 			int numToCheck = input.nextInt();
 			boolean isEven = false;
-			if(numToCheck == (int)(2*(numToCheck/2))){
+			if(numToCheck == 0){
+				System.out.println("hi!");
+			}
+			else if(numToCheck == (int)(2*(numToCheck/2))){
 				isEven = true;
-				System.out.print(" Even ");
+				System.out.println(" Even ");
 			}
 			else{
 				isEven = false;
-				System.out.print(" Odd");
+				System.out.println(" Odd");
 			}
 		}
 	}
